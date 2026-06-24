@@ -115,3 +115,47 @@ The project includes:
 * Unit tests for services
 * Integration tests for API endpoints
 * Business rule validation tests
+
+## Project Structure
+
+```text
+src
+├── controllers
+├── services
+├── repositories
+├── routes
+├── models
+├── middlewares
+├── tests
+├── container.ts
+├── app.ts
+└── server.ts
+```
+
+### Architecture
+
+The application follows a layered architecture:
+
+```text
+Request
+   ↓
+Routes
+   ↓
+Controllers
+   ↓
+Services
+   ↓
+Repositories
+   ↓
+In-Memory Storage
+```
+
+#### Responsibilities
+
+* **Routes**: endpoint definitions.
+* **Controllers**: handle HTTP requests and responses.
+* **Services**: implement business rules and application logic.
+* **Repositories**: manage in-memory data persistence.
+* **Models**: define application entities.
+* **Middlewares**: centralized error handling and request processing.
+* **Tests**: unit and integration tests.
