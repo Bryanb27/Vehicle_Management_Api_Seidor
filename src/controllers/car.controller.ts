@@ -13,6 +13,12 @@ export class CarController {
     ): void => {
         const { plate, color, brand } = req.body;
 
+        if (!plate || !color || !brand) {
+            res.status(400).json({
+                message: "plate, color and brand are required"
+            });
+        }
+
         const car = this.carService.create(
             plate,
             color,

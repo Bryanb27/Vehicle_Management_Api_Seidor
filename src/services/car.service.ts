@@ -34,7 +34,7 @@ export class CarService {
         if (color) {
             cars = cars.filter(
                 car =>
-                    car.color.toLowerCase() ===
+                    car.color?.toLowerCase() ===
                     color.toLowerCase()
             );
         }
@@ -42,7 +42,7 @@ export class CarService {
         if (brand) {
             cars = cars.filter(
                 car =>
-                    car.brand.toLowerCase() ===
+                    car.brand?.toLowerCase() ===
                     brand.toLowerCase()
             );
         }
