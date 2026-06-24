@@ -56,6 +56,8 @@ export class CarUsageService {
             );
         }
 
+        // Business rule:
+        // a vehicle can only have one active usage at a time.
         const activeDriverUsage =
             usages.find(
                 usage =>
