@@ -44,6 +44,33 @@ REST API developed with Node.js, TypeScript and Express for managing vehicles, d
 * Supertest
 * UUID
 
+## Live Demo
+
+Base URL:
+
+https://your-render-url.onrender.com
+
+The API is deployed and can be tested using Postman or any HTTP client.
+
+Note: This project uses in-memory persistence, so all data will be reset when the server restarts (e.g., Render redeploys or idle restart).
+
+### Example Endpoints
+
+#### Cars
+- GET /cars
+- POST /cars
+- GET /cars?color=Black&brand=Toyota
+
+#### Drivers
+- GET /drivers
+- POST /drivers
+- GET /drivers?name=Bryan
+
+#### Vehicle Usage
+- GET /usages
+- POST /usages
+- PATCH /usages/:id/finish
+
 ## Installation
 
 Clone the repository:
