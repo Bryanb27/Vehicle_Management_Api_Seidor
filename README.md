@@ -159,6 +159,3 @@ In-Memory Storage
 * **Models**: define application entities.
 * **Middlewares**: centralized error handling and request processing.
 * **Tests**: unit and integration tests.
-
-```
-```
