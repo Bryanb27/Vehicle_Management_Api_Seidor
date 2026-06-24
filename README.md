@@ -48,7 +48,7 @@ REST API developed with Node.js, TypeScript and Express for managing vehicles, d
 
 Base URL:
 
-https://your-render-url.onrender.com
+https://vehicle-management-api-seidor.onrender.com
 
 The API is deployed and can be tested using Postman or any HTTP client.
 
